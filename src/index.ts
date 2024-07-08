@@ -8,14 +8,7 @@ const app = express();
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
-    res.json({
-        apiversion: "1",
-        author: "Maua-Dev",
-        color: "#8B0000",
-        head: "tiger-king",
-        tail: "hook",
-        version: "1.0.0"
-    });
+    res.send("Hello worldddd");
 });
 
 app.post('/start', (req: Request, res: Response) => {
